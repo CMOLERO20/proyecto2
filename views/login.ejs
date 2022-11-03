@@ -1,0 +1,31 @@
+<%- include('templates/header'); %>
+<div class="container mt-3">
+    <div class="jumbotron">
+        <h1>Login Usuario</h1>
+        <br>
+
+        <form id="formLoginUsuario">
+            <!-- Campo nombre del producto -->
+            <div class="form-group">
+                <label for="user">Nombre</label>
+                <input id="user" class="form-control" type="text" name="user" required>
+            </div>
+
+            <!-- Campo precio del producto -->
+            <div class="form-group">
+                <label for="pass">Constraseña</label>
+                <input id="pass" class="form-control" type="string" step="0.01" name="pass" required>
+            </div>
+
+            <!-- Botón de envío -->
+            <button class="btn btn-success mt-3">Loguear</button>
+        </form>
+        <br>
+      
+    </div>
+    <div class="container mt-3">
+        <div class="jumbotron">
+            <button class="btn btn-success mt-3">Ir a registrar</button>
+        </div>
+    </div>
+<%- include('templates/footer'); %>

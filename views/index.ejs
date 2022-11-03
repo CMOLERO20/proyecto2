@@ -1,0 +1,12 @@
+<%- include('templates/header'); %>
+<%- include('templates/productos'); %>
+<DIv id="tablaProductos" >
+    <% if ( typeof productos !== 'undefined') {%>
+   <%- include('templates/productosTabla' , {productos})%>
+   <% } %>
+</DIv>
+<br>
+<div id="'chat">
+    <%-include('templates/chat'); %>
+</div>
+<%- include('templates/footer'); %>
